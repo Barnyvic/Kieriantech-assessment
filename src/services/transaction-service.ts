@@ -1,6 +1,6 @@
 import winston from "winston";
 import { v4 as uuidv4 } from "uuid";
-import { IReturnObject, Return } from "../utils/utils";
+import { Default, IReturnObject, Return } from "../utils/utils";
 
 interface Transaction {
   id: string;
@@ -18,8 +18,7 @@ export async function createTransaction(
   otp: number
 ): Promise<IReturnObject> {
   try {
-    console.log(pin);
-    if (pin !== 1234) {
+    if (pin !== Default.DEFAULT_PIN) {
       return Return({
         error: true,
         statusCode: 404,
@@ -27,7 +26,7 @@ export async function createTransaction(
       });
     }
 
-    if (otp !== 1234) {
+    if (otp !== Default.DEFAULT_OTP) {
       return Return({
         error: true,
         statusCode: 404,

@@ -17,3 +17,8 @@ export function Return(option: IReturnObject): IReturnObject {
     trace: option.trace || null,
   };
 }
+
+export enum Default {
+  DEFAULT_PIN = 1234,
+  DEFAULT_OTP = 1234
+}
