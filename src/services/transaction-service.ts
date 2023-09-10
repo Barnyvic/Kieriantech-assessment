@@ -18,7 +18,8 @@ export async function createTransaction(
   otp: number
 ): Promise<IReturnObject> {
   try {
-    if (pin === 1234) {
+    console.log(pin);
+    if (pin !== 1234) {
       return Return({
         error: true,
         statusCode: 404,
@@ -26,7 +27,7 @@ export async function createTransaction(
       });
     }
 
-    if (otp === 1234) {
+    if (otp !== 1234) {
       return Return({
         error: true,
         statusCode: 404,

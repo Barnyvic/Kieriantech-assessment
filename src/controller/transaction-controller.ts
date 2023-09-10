@@ -3,7 +3,10 @@ import { createTransaction } from "../services/transaction-service";
 import { schema } from "../validator/validator";
 import { Request, Response } from "express";
 
-export async function createTransactionHandler(req: Request, res: Response) {
+export async function createTransactionHandler(
+  req: Request,
+  res: Response
+): Promise<Response> {
   const { error, value } = schema.validate(req.body);
 
   if (error) {
