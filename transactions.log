@@ -2,3 +2,4 @@
 {"data":null,"error":true,"errorMessage":"Otp not correct","level":"info","message":"Transaction created:","statusCode":404,"successMessage":null,"trace":null}
 {"data":null,"error":true,"errorMessage":"Pin not correct","level":"info","message":"Transaction created:","statusCode":404,"successMessage":null,"trace":null}
 {"data":null,"error":true,"errorMessage":"Pin not correct","level":"info","message":"Transaction created:","statusCode":404,"successMessage":null,"trace":null}
+{"data":{"amount":4000,"destinationWalletID":"WTED12345671","id":"611ba97b-cf89-4853-b689-edd24d235691","timestamp":"2023-09-10T11:38:41.375Z"},"error":false,"errorMessage":null,"level":"info","message":"Transaction created:","statusCode":201,"successMessage":"created successfully...","trace":null}
